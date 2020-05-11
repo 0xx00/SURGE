@@ -1,0 +1,9 @@
+#!name=Anti-YouTubeAD by Choler
+#!desc=Remove Pre-movie ads
+#!system=ios
+
+[Script]
+http-request ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) script-path=https://Choler.github.io/Surge/Script/YouTube.js
+
+[MITM]
+hostname = %APPEND% *.googlevideo.com 
